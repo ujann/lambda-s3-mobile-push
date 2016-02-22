@@ -25,7 +25,7 @@ exports.handler = function (event, context) {
                 },
                 function callEscenicImort(result, callback) {
                     article = JSON.parse(result.Body.toString());
-                    console.log("Now I would call Escenic.Import(dpaArticle)", article.title);
+                    console.log("Now I would call CMS.Import(aArticle)", article.title);
                     setTimeout(callback, 1000);
                 },
                 function triggerPush(callback) {
